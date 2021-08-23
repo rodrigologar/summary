@@ -29,6 +29,7 @@ body {
           align-items: center;
   background-image: url(images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container .card {
@@ -43,32 +44,42 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 40px;
+  border-radius: 1.5rem;
   -webkit-box-shadow: 0 0 5px #b8b8b8;
           box-shadow: 0 0 5px #b8b8b8;
-  width: 450px;
+  max-width: 450px;
+  width: 90vw;
   overflow: hidden;
+}
+
+.container .card .image {
+  background-image: url(images/illustration-hero.svg);
+  width: 100%;
+  height: 24vh;
+  background-size: cover;
 }
 
 .container h1 {
   font-weight: 900;
   color: #1f2f56;
-  margin-top: 40px;
+  margin-top: 5vh;
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 .container #outer-p {
-  margin: 20px 0;
+  margin: 5% 0;
   font-weight: 500;
   color: #7280a7;
-  padding: 0 80px;
+  padding: 0 10%;
   text-align: center;
   font-size: 16px;
 }
 
 .container .annual-plan {
   background-color: #f5f7ff;
-  border-radius: 10px;
-  padding: 20px 20px;
+  border-radius: 1rem;
+  padding: 5%;
+  width: clamp(85%, 400px, 75%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,8 +92,8 @@ body {
 }
 
 .container .annual-plan .inner-plan {
-  margin-left: 20px;
-  margin-right: 80px;
+  margin-left: 3vw;
+  width: clamp(150px, 40vw, 500px);
 }
 
 .container .annual-plan .inner-plan h6 {
@@ -92,7 +103,7 @@ body {
 }
 
 .container .annual-plan .inner-plan p {
-  padding-top: 5px;
+  padding-top: 1vh;
   color: #7280a7;
 }
 
@@ -111,9 +122,9 @@ body {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
-  margin: 25px 0;
-  padding: 15px 0;
-  width: 333px;
+  margin: 3vh 0;
+  padding: 1rem 0;
+  width: clamp(85%, 400px, 75%);
   text-align: center;
   border-radius: 10px;
   -webkit-box-shadow: 0 10px 15px #e0e8ff;
@@ -128,7 +139,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   color: #7280a7;
-  margin-bottom: 40px;
+  margin-bottom: 4vh;
 }
 
 .container #cancel:hover {
@@ -136,6 +147,7 @@ body {
 }
 
 .attribution {
-  margin-top: 20px;
+  margin-top: 5vh;
+  font-size: 10px;
 }
 /*# sourceMappingURL=style.css.map */
